@@ -22,7 +22,7 @@ sh 'sudo docker inspect --type=image jhavivek1996/docker_ci:latest '
 
 stage('Push'){
 steps{
-sh "sudo docker login -u jhavivek1996 -p Cloud@Vivek1996"
+sh "sudo docker login -u jhavivek1996 -p 'Cloud@Vivek1996'"
 sh 'sudo docker push jhavivek1996/docker_ci:latest'
  }
 }
