@@ -37,8 +37,6 @@ pipeline {
         sh 'sudo docker login -u jhavivek1996 -p "Cloud@Vivek1996"'
         sh 'sudo docker pull "jhavivek1996/docker_ci:latest"'
         sh 'sudo docker run -d --name nodetodoapp -p 3000:3000 "jhavivek1996/docker_ci:latest"'
-        sh ''
-        '
         #ssh - i / home / vivek / ec2.pem - o StrictHostKeyChecking = no ubuntu @13 .233 .49 .114 << EOF
         #sudo docker login - u jhavivek1996 - p Cloud @Vivek1996
         #sudo docker pull jhavivek1996 / nodetodo - app - test: latest
