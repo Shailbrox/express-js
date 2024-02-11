@@ -16,7 +16,7 @@ sh 'sudo docker build . -t jhavivek1996/docker_ci:latest'
 stage('Test image') {
 steps {
 echo 'testing…'
-sh 'sudo docker inspect -type=image jhavivek1996/docker_ci:latest '
+sh 'sudo docker inspect --type=image jhavivek1996/docker_ci:latest '
  }
 }
 
